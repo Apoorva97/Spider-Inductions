@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_102e83e19e6db1b5f374a39ff299a8fe2fe1b17a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_b9d150e4d9b93d4ceb69bea1ab86974842246d60\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f389d4fb33f99347ede10debe4679093052464bd">
+        <dex dex="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_88688073c442c4018f9045b52349e20d6cd475c5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_58ab4846ba7b5a95fb7f01ad27ed9d20e2947b10\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="95c282d68df9d24be5a57dc26397e867083acfd4">
+        <dex dex="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_60c703985bd9e1daf67a9c06b3bb4fd266ba2888\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Apoorva N\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_fd686e62fa83331210350d589f905bc5c9f50428\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_c67007739060f5254fa03d4366f3972f76d2b165\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Apoorva N\AndroidStudioProjects\Spider_Appdev1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_fb5a35611f812ed5e30c2465e57a7b3a8cbc6ae3\classes.dex" />
+    </item>
+
+</items>
