@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Spider Induction</string>
+    <string name="dept_prompt">DEPARTMENT</string>
+
+
+    <string-array name="dept_array">
+        <item>CSC</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>ICE</item>
+        <item>MECH</item>
+        <item>CIVIL</item>
+        <item>CHEM</item>
+        <item>META</item>
+        <item>PROD</item>
+    </string-array>
+
+</resources>
