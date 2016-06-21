@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SlideShow</string>
+    <string name="hello">hello</string>
+    <string-array name="Tracks">
+        <item>Track1</item>
+        <item>Track2</item>
+        <item>Track3</item>
+        <item>Track4</item>
+        <item>Track5</item>
+    </string-array>
+</resources>
