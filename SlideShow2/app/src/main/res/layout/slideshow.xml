@@ -55,5 +55,22 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SLIDESHOW"
+        android:onClick="slideshow"
+        android:id="@+id/b"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROXIMITY SENSOR"
+        android:id="@+id/prox"
+        android:layout_below="@+id/b"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

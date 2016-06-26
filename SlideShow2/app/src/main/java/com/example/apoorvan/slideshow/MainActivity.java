@@ -10,7 +10,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-    Button button;
+    Button button,b;
     Spinner spinner;
     String text;
 
@@ -21,13 +21,23 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         spinner=(Spinner)findViewById(R.id.spinner);
         button=(Button)findViewById(R.id.button1);
+        b=(Button)findViewById(R.id.button);
+        text=spinner.getSelectedItem().toString();
         button.setOnClickListener(new OnClickListener() {
-
+            @Override
             public void onClick(View v) {
-                text=spinner.getSelectedItem().toString();
                 Intent intent=new Intent(MainActivity.this,slideshow.class);
                 intent.putExtra("Track",text);
                 startActivity(intent);
+
+            }
+        });
+        b.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(MainActivity.this,proxsensor.class);
+                intent1.putExtra("Track",text);
+                startActivity(intent1);
 
             }
         });

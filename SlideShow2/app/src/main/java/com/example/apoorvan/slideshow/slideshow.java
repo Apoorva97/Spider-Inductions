@@ -7,13 +7,20 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 public class slideshow extends Activity{
     private TextView txtStatus;
     MediaPlayer mySound1,mySound2,mySound3,mySound4,mySound5;
     String str;
+    Button b;
+    Button prox;
     int num;
     TextView text;
     TextView t;
@@ -56,39 +63,30 @@ public class slideshow extends Activity{
         else mySound5.pause();
     }
 
-    class RefreshHandler extends Handler{
-        @Override
-        public void handleMessage(Message msg) {
-            // TODO Auto-generated method stub
-            slideshow.this.updateUI();
-        }
-        public void sleep(long delayMillis){
-            this.removeMessages(0);
-            sendMessageDelayed(obtainMessage(0), delayMillis);
-        }
-    };
-    public void updateUI(){
-            if(i<imgid.length){
-                imageView.setImageResource(imgid[i]);
-                refreshHandler.sleep(3000);
-                i++;
+          class RefreshHandler extends Handler {
+            @Override
+            public void handleMessage(Message msg) {
+                // TODO Auto-generated method stub
+                slideshow.this.updateUI();
             }
-            if(i==imgid.length){
-                Running=false;
-            }
-        }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.slideshow);
-        mySound1=MediaPlayer.create(this,R.raw.beat);
-        mySound2=MediaPlayer.create(this,R.raw.beautiful);
-        mySound3=MediaPlayer.create(this,R.raw.cool);
-        mySound4=MediaPlayer.create(this,R.raw.joy);
-        mySound5=MediaPlayer.create(this,R.raw.landscape);
-        timerHandler=new Handler();
+            public void sleep(long delayMillis) {
+                this.removeMessages(0);
+                sendMessageDelayed(obtainMessage(0), delayMillis);
+            }
+        }
+    public void updateUI () {
+        startTime=0;
+        if (i < imgid.length) {
+            imageView.setImageResource(imgid[i]);
+            refreshHandler.sleep(3000);
+            i++;
+        }
+        if (i == imgid.length) {
+            Running = false;
+        }
+    }
+    public void slideshow(View view) {
         final Runnable runnable=new Runnable() {
             @Override
             public void run() {
@@ -108,17 +106,42 @@ public class slideshow extends Activity{
 
                     });
                 }}
-                };
-
+        };
         new Thread(runnable).start();
+                     updateUI();
+            b.setEnabled(false);
+    }
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.slideshow);
+        mySound1=MediaPlayer.create(this,R.raw.beat);
+        mySound2=MediaPlayer.create(this,R.raw.beautiful);
+        mySound3=MediaPlayer.create(this,R.raw.cool);
+        mySound4=MediaPlayer.create(this,R.raw.joy);
+        mySound5=MediaPlayer.create(this,R.raw.landscape);
+        timerHandler=new Handler();
+        prox=(Button)findViewById(R.id.prox);
+        prox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(slideshow.this,proxsensor.class);
+                i.putExtra("Track",str);
+                startActivity(i);
+            }
+        });
         Intent intent=getIntent();
+        b=(Button)findViewById(R.id.b);
         str= intent.getStringExtra("Track");
         text=(TextView)findViewById(R.id.textView2);
         text.setText(str);
         timer=(TextView)findViewById(R.id.textView3);
         this.txtStatus=(TextView)this.findViewById(R.id.textView1);
         this.imageView=(ImageView)this.findViewById(R.id.imageView);
-        updateUI();
+
     }
 
 }
